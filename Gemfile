@@ -2,9 +2,14 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails', '~> 4.1.5'
 
-gem 'peoplefinder',
-  git: 'https://github.com/ministryofjustice/peoplefinder.git',
-  branch: 'rails-engine'
+if ENV['ENGINE_DEV']
+  gem 'peoplefinder', path: "../peoplefinder"
+else
+  gem 'peoplefinder',
+    git: 'https://github.com/ministryofjustice/peoplefinder.git',
+    branch: 'rails-engine',
+    ref: "c50020f9a9679d9c5e6079dfc1d99e8eaed65659"
+end
 
 gem 'carrierwave',
   git: 'https://github.com/carrierwaveuploader/carrierwave.git',
