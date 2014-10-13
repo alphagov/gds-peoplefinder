@@ -1,28 +1,27 @@
-== README
+== GDS Peoplefinder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a wrapper application for 'peoplefinder'
 
-Things you may want to cover:
+== Importing migrations from engine
 
-* Ruby version
+If the engine has new database migrations, you can import them into this application to apply them to the application database using the following:
 
-* System dependencies
+```
+$ bundle exec rake peoplefinder:install:migrations
+```
 
-* Configuration
+This copies the migrations into the application's `db/migrate` directory. You
+should commit any such imported migration files to this applications repo:
 
-* Database creation
+```
+$ git add db/migrate
+$ git commit -m 'Imported new migrations from engine'
+```
 
-* Database initialization
+You should then run the migrations in the usual way:
 
-* How to run the test suite
+```
+$ bundle exec rake db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+And commit the `schema.rb`
