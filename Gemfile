@@ -27,3 +27,5 @@ group :development, :test do
     git: 'https://github.com/threedaymonk/jshint.git',
     branch: 'master'
 end
+
+gem 'rails_12factor', group: :production
