@@ -1,3 +1,9 @@
 // Single-line comment blocks (SCSS, JavaScript)
 //= require peoplefinder/application
 //= require_tree .
+//= require_self
+
+#global-header #logo img {
+  width: 124px;
+  height: 36px;
+}
