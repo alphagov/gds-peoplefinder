@@ -83,4 +83,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {
     host: "peoplefinder-test.herokuapp.com"
   }
+
+  config.elastic_search_url = ENV['BONSAI_URL']
 end
