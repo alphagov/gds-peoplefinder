@@ -77,10 +77,7 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
-  database: gds_peoplefinder_production
-  username: gds_peoplefinder
-  password: <%= ENV['GDS_PEOPLEFINDER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
