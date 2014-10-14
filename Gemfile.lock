@@ -11,10 +11,11 @@ GIT
 
 GIT
   remote: https://github.com/ministryofjustice/moj_internal_template.git
-  revision: f8e9712834bc46b13ac0e2c0b6763cf15c6c1c94
+  revision: 13394bae86f097bb59b9449209275e6dbed3cb00
+  ref: 13394bae86f097bb59b9449209275e6dbed3cb00
   branch: master
   specs:
-    moj_internal_template (0.1.0)
+    moj_internal_template (0.1.1)
       govuk_frontend_toolkit (= 1.3.0)
       govuk_template (= 0.8.1)
       rails (~> 4)
@@ -27,12 +28,19 @@ GIT
       omniauth-oauth2 (~> 1.1)
 
 GIT
-  remote: https://github.com/ministryofjustice/peoplefinder.git
-  revision: c50020f9a9679d9c5e6079dfc1d99e8eaed65659
-  ref: c50020f9a9679d9c5e6079dfc1d99e8eaed65659
-  branch: rails-engine
+  remote: https://github.com/threedaymonk/jshint.git
+  revision: b7fb727e07c76f6e388979169ea0c3b95e3075dd
+  branch: master
   specs:
-    peoplefinder (0.0.1)
+    jshint (0.0.2)
+      execjs (>= 1.4.0)
+      multi_json (~> 1.0)
+      therubyracer (~> 0.12.1)
+
+PATH
+  remote: ../peoplefinder
+  specs:
+    peoplefinder (0.0.2)
       ancestry
       carrierwave (~> 0.10.0)
       elasticsearch-model (~> 0.1.4)
@@ -47,7 +55,7 @@ GIT
       jquery-rails
       mail
       mini_magick
-      moj_internal_template
+      moj_internal_template (~> 0.1.1)
       omniauth-gplus (~> 2.0.1)
       paper_trail (~> 3.0.5)
       pg
@@ -59,16 +67,6 @@ GIT
       unf
       unicorn (~> 4.8.3)
       will_paginate (~> 3.0)
-
-GIT
-  remote: https://github.com/threedaymonk/jshint.git
-  revision: b7fb727e07c76f6e388979169ea0c3b95e3075dd
-  branch: master
-  specs:
-    jshint (0.0.2)
-      execjs (>= 1.4.0)
-      multi_json (~> 1.0)
-      therubyracer (~> 0.12.1)
 
 GEM
   remote: https://rubygems.org/
