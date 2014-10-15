@@ -80,8 +80,11 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.support_email = 'peoplefinder@digital.cabinet-office.gov.uk'
+
   config.action_mailer.default_url_options = {
-    host: "peoplefinder-test.herokuapp.com"
+    host: "peoplefinder-test.herokuapp.com",
+    from: config.support_email
   }
 
   config.elastic_search_url = ENV['BONSAI_URL']
