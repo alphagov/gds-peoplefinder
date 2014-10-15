@@ -83,8 +83,10 @@ Rails.application.configure do
   config.support_email = 'peoplefinder@digital.cabinet-office.gov.uk'
 
   config.action_mailer.default_url_options = {
-    host: "peoplefinder-test.herokuapp.com",
-    from: config.support_email
+    host: "peoplefinder-alpha.herokuapp.com"
+  }
+  config.action_mailer.default_options = {
+    from:  config.support_email
   }
 
   config.elastic_search_url = ENV['BONSAI_URL']
