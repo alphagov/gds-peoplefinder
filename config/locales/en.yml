@@ -2,6 +2,7 @@ en:
   peoplefinder:
     sessions:
       login_page:
+        body_google: Login using your digital.cabinet-office.gov.uk google account
         body_other: Enter a valid digital.cabinet-office.gov.uk email address below
     views:
       info_text:
