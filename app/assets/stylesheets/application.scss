@@ -3,7 +3,29 @@
 //= require_tree .
 //= require_self
 
-#global-header #logo img {
-  width: 124px;
+#global-header .header-wrapper .header-global {
   height: 36px;
+  .header-logo {
+    background-image: image-url('crest.png');
+    background-repeat: no-repeat;
+    background-size: 55px 36px;
+
+    #logo {
+      padding-left: 55px;
+      font-size: 28px;
+    }
+
+    width: 45%;
+    padding-right: 0;
+    height: 36px;
+  }
+
+  .header-app-name {
+    width: 20%;
+    margin: 4px;
+  }
+
+  #log-in-out {
+    width: 29%;
+  }
 }
