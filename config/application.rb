@@ -21,10 +21,11 @@ module GdsPeoplefinder
     # config.i18n.default_locale = :de
 
     config.ga_tracking_id = ''
-    config.app_title = "GDS Peoplefinder"
+    config.app_title = "People Finder"
     config.valid_login_domains = %w{
         digital.cabinet-office.gov.uk
     }
+    config.disable_profile_tags = true
     config.disable_token_auth = true
   end
 end
