@@ -25,5 +25,6 @@ module GdsPeoplefinder
     config.valid_login_domains = %w{
         digital.cabinet-office.gov.uk
     }
+    config.disable_token_auth = true
   end
 end
