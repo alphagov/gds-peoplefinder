@@ -13,6 +13,9 @@
     #logo {
       padding-left: 55px;
       font-size: 28px;
+      font-weight: normal;
+      position: relative;
+      top: 4px;
     }
 
     width: 45%;
@@ -22,10 +25,32 @@
 
   .header-app-name {
     width: 20%;
-    margin: 4px;
+    margin-top: 6px;
+    font-weight: normal;
   }
 
   #log-in-out {
     width: 29%;
+    height: 36px;
+    margin: 0;
+    margin-top: 8px;
+    line-height: 36px;
   }
+}
+
+// override things that don't inherit their font
+html,
+body,
+button,
+input,
+table,
+td, th,
+.form-control,
+.form-label,
+.form-label-bold,
+#global-cookie-message p,
+button.button,
+table th,
+table td {
+  font-family: Helvetica;
 }
