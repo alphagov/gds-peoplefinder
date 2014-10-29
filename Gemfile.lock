@@ -28,10 +28,17 @@ GIT
       omniauth-oauth2 (~> 1.1)
 
 GIT
-  remote: https://github.com/ministryofjustice/peoplefinder.git
-  revision: 5174445cb9709e70ea7635715825e6ae8e3c9710
-  ref: 5174445cb9709e70ea7635715825e6ae8e3c9710
+  remote: https://github.com/threedaymonk/jshint.git
+  revision: b7fb727e07c76f6e388979169ea0c3b95e3075dd
   branch: master
+  specs:
+    jshint (0.0.2)
+      execjs (>= 1.4.0)
+      multi_json (~> 1.0)
+      therubyracer (~> 0.12.1)
+
+PATH
+  remote: ../peoplefinder
   specs:
     peoplefinder (0.0.2)
       ancestry
@@ -61,16 +68,6 @@ GIT
       unf
       unicorn (~> 4.8.3)
       will_paginate (~> 3.0)
-
-GIT
-  remote: https://github.com/threedaymonk/jshint.git
-  revision: b7fb727e07c76f6e388979169ea0c3b95e3075dd
-  branch: master
-  specs:
-    jshint (0.0.2)
-      execjs (>= 1.4.0)
-      multi_json (~> 1.0)
-      therubyracer (~> 0.12.1)
 
 GEM
   remote: https://rubygems.org/
