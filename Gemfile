@@ -7,7 +7,8 @@ if ENV['ENGINE_DEV']
 else
   gem 'peoplefinder',
     git: 'https://github.com/ministryofjustice/peoplefinder.git',
-    branch: 'add-community-field'
+    branch: 'master',
+    tag: 'dc49edb466b912a628c2f973f8732bae63d3fccb'
 end
 
 gem 'carrierwave',
