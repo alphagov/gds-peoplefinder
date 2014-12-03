@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.1.4'
 gem 'rails', '~> 4.1.5'
 
 if ENV['ENGINE_DEV']
@@ -7,8 +7,7 @@ if ENV['ENGINE_DEV']
 else
   gem 'peoplefinder',
     git: 'https://github.com/ministryofjustice/peoplefinder.git',
-    branch: 'master',
-    tag: 'dc49edb466b912a628c2f973f8732bae63d3fccb'
+    branch: 'postgresql-for-search'
 end
 
 gem 'carrierwave',
@@ -17,7 +16,7 @@ gem 'carrierwave',
 gem 'moj_internal_template',
   git: 'https://github.com/ministryofjustice/moj_internal_template.git',
   branch: 'master',
-  ref: '13394bae86f097bb59b9449209275e6dbed3cb00'
+  ref: 'c62fe0216ef1db8dcdddc1197e3aec64d00043dc'
 gem 'omniauth-gplus',
   git: 'https://github.com/ministryofjustice/omniauth-gplus.git'
 
