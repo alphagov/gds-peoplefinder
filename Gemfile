@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.4'
 gem 'rails', '~> 4.1.5'
+gem 'aws-ses'
 
 if ENV['ENGINE_DEV']
   gem 'peoplefinder', path: "../peoplefinder"

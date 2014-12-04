@@ -103,6 +103,11 @@ GEM
     ancestry (2.1.0)
       activerecord (>= 3.0.0)
     arel (5.0.1.20140414130214)
+    aws-ses (0.6.0)
+      builder
+      mail (> 2.2.5)
+      mime-types
+      xml-simple
     builder (3.2.2)
     dotenv (1.0.1)
     dotenv-rails (1.0.1)
@@ -269,11 +274,13 @@ GEM
       rack
       raindrops (~> 0.7)
     will_paginate (3.0.7)
+    xml-simple (1.1.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-ses
   carrierwave!
   dotenv-rails
   jshint!
