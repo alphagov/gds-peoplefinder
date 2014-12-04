@@ -189,7 +189,9 @@ CREATE TABLE people (
     works_sunday boolean DEFAULT false,
     no_phone boolean DEFAULT false,
     tags text,
-    community_id integer
+    community_id integer,
+    login_count integer DEFAULT 0 NOT NULL,
+    last_login_at timestamp without time zone
 );
 
 
@@ -537,6 +539,13 @@ CREATE UNIQUE INDEX index_people_on_slug ON people USING btree (slug);
 
 
 --
+-- Name: index_search_index_on_document; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_search_index_on_document ON search_index USING gin (document);
+
+
+--
 -- Name: index_search_index_on_person_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -574,4 +583,8 @@ INSERT INTO schema_migrations (version) VALUES ('20141029130211');
 INSERT INTO schema_migrations (version) VALUES ('20141029190955');
 
 INSERT INTO schema_migrations (version) VALUES ('20141107182058');
+
+INSERT INTO schema_migrations (version) VALUES ('20141204095051');
+
+INSERT INTO schema_migrations (version) VALUES ('20141204095052');
 
