@@ -20,4 +20,5 @@
 
 # Ignore environment configuration
 /.env
+.elasticbeanstalk
 .elasticbeanstalk/
